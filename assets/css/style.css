@@ -1,0 +1,85 @@
+*{
+	font-family: arial;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+}
+.area{
+	width: 1000px;
+	margin: auto;
+}
+/* Menu */
+.menu{
+	height: 50px;
+	background-color: #000;
+	margin: auto;
+}
+.menu ul{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+.menu ul li{
+	float: left;
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+}
+.menu ul li a{
+	text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0;
+    background: none;
+    margin: 0 auto;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;
+}
+.menu ul li a::before{
+	color: #ffcc00;
+	content: attr(data-hover);
+	position: absolute;
+	opacity: 0;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+.menu ul li a:hover::before{
+	transform: scale(1.0) translateX(0px) translateY(0px) rotate(0deg);
+	opacity: 1;
+}
+.menu ul li .ativo{
+	color:#ffcc00;
+}
+
+/* Texto Animado */
+.textoAnimado{
+	padding-top: 30px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+}
+.texto{
+	width: 200px;
+	height: 20px;
+	margin: auto;
+	font-size: 30px;
+}
+.animar{
+	width: 70px;
+	height: 20px;
+	background-color: green;
+	border-radius: 5px;
+	margin: auto;
+	cursor: pointer;
+	margin-top: 30px;
+}
